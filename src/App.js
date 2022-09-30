@@ -7,6 +7,7 @@ import OurTeam from './Pages/Team/OurTeam';
 import Contack from './Pages/Contack/Contack';
 import Login from './Pages/Login/Login/Login';
 import Footer from './Pages/Shared/Footer/Footer'
+import Appoinment from './Pages/Appoinment/Appoinment';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/team" element={<OurTeam />}></Route>
           <Route path="/contack" element={<Contack />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/appoinment" element={<Appoinment />}></Route>
 
 
 

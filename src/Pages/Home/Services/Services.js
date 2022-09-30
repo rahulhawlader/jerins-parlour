@@ -2,6 +2,7 @@ import React from 'react';
 import faceT from '../../../images/jerins-parlour-main/Image_Icon/Icon/Group 1373.png';
 import hairC from '../../../images/jerins-parlour-main/Image_Icon/Icon/Group 1372.png';
 import skinT from '../../../images/jerins-parlour-main/Image_Icon/Icon/Group 1374.png';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
 
@@ -57,7 +58,7 @@ const Services = () => {
 
 
    <div className='flex justify-center items-center my-10'>
-    <button class="btn bg-pink-700 text-white hover:bg-pink-700">Exlpore more</button>
+    <button class="btn bg-pink-700 text-white hover:bg-pink-700"><Link to="/appoinment">More Xplore</Link></button>
    </div>
   </div>
 
