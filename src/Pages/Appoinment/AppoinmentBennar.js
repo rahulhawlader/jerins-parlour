@@ -8,9 +8,9 @@ const AppoinmentBennar = ({ date, setDate }) => {
 
  return (
   <div>
-   <div class="hero min-h-screen ">
-    <div class="hero-content flex-col lg:flex-row-reverse">
-     <img src={images} class="max-w-sm w-2/4 rounded-lg shadow-2xl" alt='' />
+   <div className="hero min-h-screen ">
+    <div className="hero-content flex-col lg:flex-row-reverse">
+     <img src={images} className="max-w-sm w-2/4 rounded-lg shadow-2xl" alt='' />
      <div className='text-black'>
       <DayPicker
        mode="single"
