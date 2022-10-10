@@ -7,7 +7,7 @@ const BennerTwo = () => {
    <div className="hero min-h-screen bg-white">
     <div className="hero-content flex-col lg:flex-row">
      <img src={img} className="w-96 rounded-lg shadow-2xl" alt='' />
-     <div className='ml-3'>
+     <div >
       <h1 className="text-4xl text-black font-bold">Let us handle your screen <span className='text-pink-700'>Professionally </span>.</h1>
       <p className="py-6 text-black">With well written codes, we build amazing apps for all platforms, mobile and web apps in general ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum.</p>
       <div className='flex  gap-6 '>

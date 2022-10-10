@@ -32,11 +32,11 @@ const AvailableAppoinment = ({ date }) => {
   // }, [formattedDate])
 
   return (
-    <div className='max-w-7xl sm:min-w-sm mx-auto px-12 mb-28'>
+    <div className='max-w-7xl sm:min-w-sm mx-auto  mb-28'>
       <h4 className='text-xl text-secondary text-center my-12'>Available Appointment On {format(date, 'PP')}</h4>
 
 
-      <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5'>
+      <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 '>
 
         {
           services?.map(service => <Service

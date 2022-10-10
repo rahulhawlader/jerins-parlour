@@ -4,8 +4,9 @@ const Service = ({ service, setTreatment }) => {
   const { name, slots, price } = service;
   return (
     <div>
-      <div className="card lg:max-w-lg  shadow-xl">
-        <div className="card-body text-center">
+      <div className="lg:max-w-lg w-72 h-60 shadow-xl">
+        {/*  */}
+        <div className="card-body text-center ">
           <h2 className="text-xl font-bold text-secondary" > {name}</h2 >
           <p className='text-black'><small>Price: ${price}</small></p>
           <p className='text-black'>{
@@ -18,14 +19,14 @@ const Service = ({ service, setTreatment }) => {
 
 
 
-
-          <div className='card-actions justify-center'>
+          {/* card-actions  */}
+          <div className='justify-center '>
             <label
               htmlFor='booking-modal'
 
               disabled={slots.length === 0}
               onClick={() => setTreatment(service)}
-              className="btn btn-sm btn-secondary text-white appercase">Booking Appointment</label>
+              className="btn  btn-sm btn-secondary text-white appercase">Booking Appointment</label>
           </div>
 
 
