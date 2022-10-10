@@ -22,7 +22,7 @@ const MyReview = () => {
     }
 
 
-    fetch(`http://localhost:5000/review`, {
+    fetch(`https://desolate-coast-72587.herokuapp.com/review`, {
       method: 'POST',
       headers: {
 

@@ -13,7 +13,7 @@ const AvailableAppoinment = ({ date }) => {
   const formattedDate = format(date, 'PP')
 
 
-  const { data: services, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(`http://localhost:5000/available?date=${formattedDate}`)
+  const { data: services, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(`https://desolate-coast-72587.herokuapp.com/available?date=${formattedDate}`)
 
     .then(res => res.json())
 
@@ -26,7 +26,7 @@ const AvailableAppoinment = ({ date }) => {
 
 
   // useEffect(() => {
-  //   fetch(`http://localhost:5000/available?date=${formattedDate}`)
+  //   fetch(`https://desolate-coast-72587.herokuapp.com/available?date=${formattedDate}`)
   //     .then(res => res.json())
   //     .then(data => setServices(data))
   // }, [formattedDate])
@@ -36,7 +36,7 @@ const AvailableAppoinment = ({ date }) => {
       <h4 className='text-xl text-secondary text-center my-12'>Available Appointment On {format(date, 'PP')}</h4>
 
 
-      <div className='grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+      <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5'>
 
         {
           services?.map(service => <Service
