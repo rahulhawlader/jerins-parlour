@@ -29,7 +29,19 @@ const Dashboard = () => {
      {/* <!-- Sidebar content here --> */}
      <li><Link to="/dashboard"><img style={{ heght: "70px", width: "26px" }} src={bookedImg} alt=''></img> Booking List</Link></li>
      <li><Link to="/dashboard/myreview"><img style={{ heght: "70px", width: "26px" }} src={reviewImg} alt=''></img>  My Review</Link></li>
-     {admin && <li><Link to="/dashboard/user"><img style={{ heght: "70px", width: "26px" }} src={usersImg} alt=''></img>  Make Admin</Link></li>}
+
+     {admin && <>
+      <li><Link to="/dashboard/user"><img style={{ heght: "70px", width: "26px" }} src={usersImg} alt=''></img>  Make Admin</Link></li>
+
+      <li><Link to="/dashboard/employee"><img style={{ heght: "70px", width: "26px" }} src={usersImg} alt=''></img> Add a Employee</Link></li>
+
+      <li><Link to="/dashboard/manage"><img style={{ heght: "70px", width: "26px" }} src={usersImg} alt=''></img> Manage a Employee</Link></li>
+
+     </>}
+
+
+
+
     </ul>
 
    </div>

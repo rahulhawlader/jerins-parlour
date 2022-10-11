@@ -18,6 +18,9 @@ import MyAppoinment from './Pages/Dashbord/MyAppoinment';
 import MyReview from './Pages/Dashbord/MyReview';
 import AllUsers from './Pages/Dashbord/AllUsers';
 import RequireAdmin from './Pages/Login/RequireAdmin';
+import AddEmployee from './Pages/Dashbord/AddEmployee';
+import ManageEmployee from './Pages/Dashbord/ManageEmployee';
+import Payment from './Pages/Dashbord/Payment';
 
 
 function App() {
@@ -34,23 +37,34 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<SignUp />}></Route>
 
-          <Route path="/appoinment" element={
-
-            <RequireAuth>
-              <Appoinment />
-            </RequireAuth>
+          <Route path="/appoinment" element={<RequireAuth><Appoinment /></RequireAuth>
           }></Route>
-          <Route path="/dashboard" element={
-
-            <RequireAuth>
-              <Dashboard />
-            </RequireAuth>
+          
+          <Route path="/dashboard" element={<RequireAuth><Dashboard /></RequireAuth>
           }>
             <Route index element={<MyAppoinment />}></Route>
             <Route path='myreview' element={<MyReview />}></Route>
+            <Route path='payment/:id' element={<Payment />}></Route>
+
             <Route path='user' element={
               <RequireAdmin>
                 <AllUsers />
+              </RequireAdmin>
+
+            }></Route>
+
+
+            <Route path='employee' element={
+              <RequireAdmin>
+                <AddEmployee />
+              </RequireAdmin>
+
+            }></Route>
+
+
+            <Route path='manage' element={
+              <RequireAdmin>
+                <ManageEmployee />
               </RequireAdmin>
 
             }></Route>

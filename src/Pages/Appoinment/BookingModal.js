@@ -30,7 +30,7 @@ const BookingModal = ({ treatment, date, setTreatment, refetch }) => {
 
 
 
-    fetch('https://desolate-coast-72587.herokuapp.com/booking', {
+    fetch('http://localhost:5000/booking', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
